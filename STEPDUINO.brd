@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -1756,25 +1756,28 @@ Copal</description>
 <rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
 </package>
+<package name="0603">
+<wire x1="-1.27" y1="0.508" x2="1.27" y2="0.508" width="0.0508" layer="39"/>
+<wire x1="1.27" y1="0.508" x2="1.27" y2="-0.508" width="0.0508" layer="39"/>
+<wire x1="1.27" y1="-0.508" x2="-1.27" y2="-0.508" width="0.0508" layer="39"/>
+<wire x1="-1.27" y1="-0.508" x2="-1.27" y2="0.508" width="0.0508" layer="39"/>
+<wire x1="-0.508" y1="0.3302" x2="0.508" y2="0.3302" width="0.1016" layer="51"/>
+<wire x1="-0.508" y1="-0.3302" x2="0.508" y2="-0.3302" width="0.1016" layer="51"/>
+<wire x1="-0.127" y1="0.254" x2="0.127" y2="0.254" width="0.254" layer="21"/>
+<wire x1="-0.127" y1="-0.254" x2="0.127" y2="-0.254" width="0.254" layer="21"/>
+<smd name="1" x="-0.762" y="0" dx="0.762" dy="0.762" layer="1"/>
+<smd name="2" x="0.762" y="0" dx="0.762" dy="0.762" layer="1"/>
+<text x="-0.889" y="0.508" size="0.4064" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.016" y="-0.9652" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
+<rectangle x1="-0.762" y1="-0.381" x2="-0.381" y2="0.381" layer="51"/>
+<rectangle x1="0.381" y1="-0.381" x2="0.762" y2="0.381" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35" rot="R180"/>
+</package>
 </packages>
 </library>
 <library name="freetronics">
 <packages>
-<package name="0603">
-<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
-<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="-0.889" y="0.762" size="0.4064" layer="25" font="vector">&gt;NAME</text>
-<text x="-1.016" y="-1.143" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
 <package name="0603@1">
 <wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
 <wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
@@ -2238,7 +2241,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <attribute name="NAME" x="3.58775" y="59.6138" size="0.8128" layer="25" ratio="12"/>
 <attribute name="VALUE" x="2.111375" y="58.518425" size="0.8128" layer="27" ratio="15"/>
 </element>
-<element name="R7" library="freetronics-master-v1" package="0603" value="3K9 0603" x="11.43" y="54.864" smashed="yes">
+<element name="R7" library="freetronics-master-v1.1" package="0603" value="3K9 0603" x="11.43" y="54.864" smashed="yes">
 <attribute name="NAME" x="11.049" y="55.626" size="0.8128" layer="25" font="vector" ratio="12"/>
 <attribute name="VALUE" x="14.605" y="54.467125" size="0.8128" layer="27" font="vector" ratio="15"/>
 </element>
@@ -2258,15 +2261,15 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <attribute name="NAME" x="52.4764" y="55.927625" size="0.8128" layer="25" font="vector" ratio="12"/>
 <attribute name="VALUE" x="51.2064" y="55.245" size="0.8128" layer="27" font="vector" ratio="15"/>
 </element>
-<element name="R3" library="freetronics-master-v1" package="0603" value="1K8 0603" x="18.796" y="54.102" smashed="yes">
+<element name="R3" library="freetronics-master-v1.1" package="0603" value="1K8 0603" x="18.796" y="54.102" smashed="yes">
 <attribute name="NAME" x="18.288" y="54.737" size="0.8128" layer="25" font="vector" ratio="12"/>
 <attribute name="VALUE" x="21.971" y="53.721" size="0.8128" layer="27" font="vector" ratio="15"/>
 </element>
-<element name="R2" library="freetronics-master-v1" package="0603" value="1K 0603" x="10.414" y="51.816" smashed="yes" rot="R270">
+<element name="R2" library="freetronics-master-v1.1" package="0603" value="1K 0603" x="10.414" y="51.816" smashed="yes" rot="R270">
 <attribute name="NAME" x="10.668" y="52.705" size="0.8128" layer="25" font="vector" ratio="12"/>
 <attribute name="VALUE" x="10.0838" y="48.783875" size="0.8128" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
-<element name="R1" library="freetronics-master-v1" package="0603" value="1K 0603" x="8.89" y="51.816" smashed="yes" rot="R270">
+<element name="R1" library="freetronics-master-v1.1" package="0603" value="1K 0603" x="8.89" y="51.816" smashed="yes" rot="R270">
 <attribute name="NAME" x="8.255" y="52.832" size="0.8128" layer="25" font="vector" ratio="12"/>
 <attribute name="VALUE" x="8.5598" y="48.625125" size="0.8128" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
@@ -2537,19 +2540,19 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <attribute name="NAME" x="60.198" y="24.257" size="0.8128" layer="25" ratio="12"/>
 <attribute name="VALUE" x="56.388" y="19.685" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="C10" library="freetronics" package="0603" value="22pF 0603" x="63.5" y="27.178" smashed="yes">
+<element name="C10" library="freetronics-master-v1.1" package="0603" value="22pF 0603" x="63.5" y="27.178" smashed="yes">
 <attribute name="NAME" x="62.611" y="27.94" size="0.8128" layer="25" font="vector" ratio="12"/>
 <attribute name="VALUE" x="62.484" y="26.035" size="0.4064" layer="27" font="vector"/>
 </element>
-<element name="C11" library="freetronics" package="0603" value="22pF 0603" x="59.436" y="27.178" smashed="yes" rot="R180">
+<element name="C11" library="freetronics-master-v1.1" package="0603" value="22pF 0603" x="59.436" y="27.178" smashed="yes" rot="R180">
 <attribute name="NAME" x="58.293" y="27.94" size="0.8128" layer="25" font="vector" ratio="12"/>
 <attribute name="VALUE" x="60.452" y="28.321" size="0.4064" layer="27" font="vector" rot="R180"/>
 </element>
-<element name="C12" library="freetronics" package="0603" value="100nF 0603" x="54.61" y="8.382" smashed="yes" rot="R90">
+<element name="C12" library="freetronics-master-v1.1" package="0603" value="100nF 0603" x="54.61" y="8.382" smashed="yes" rot="R90">
 <attribute name="NAME" x="54.229" y="9.398" size="0.8128" layer="25" font="vector" ratio="12"/>
 <attribute name="VALUE" x="55.753" y="7.366" size="0.4064" layer="27" font="vector" rot="R90"/>
 </element>
-<element name="C36" library="freetronics" package="0603" value="100nF 0603" x="78.486" y="13.97" smashed="yes" rot="R270">
+<element name="C36" library="freetronics-master-v1.1" package="0603" value="100nF 0603" x="78.486" y="13.97" smashed="yes" rot="R270">
 <attribute name="NAME" x="77.851" y="14.986" size="0.8128" layer="25" font="vector" ratio="12"/>
 <attribute name="VALUE" x="77.343" y="14.986" size="0.4064" layer="27" font="vector" rot="R270"/>
 </element>
@@ -2561,7 +2564,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <attribute name="NAME" x="40.259" y="21.463" size="1.27" layer="26" ratio="10" rot="MR0"/>
 <attribute name="VALUE" x="38.2079" y="20.32" size="0.02" layer="28" rot="MR0"/>
 </element>
-<element name="R13" library="freetronics" package="0603" value="1M 0603" x="61.722" y="20.574" smashed="yes">
+<element name="R13" library="freetronics-master-v1.1" package="0603" value="1M 0603" x="61.722" y="20.574" smashed="yes">
 <attribute name="NAME" x="60.833" y="21.336" size="0.8128" layer="25" font="vector" ratio="12"/>
 <attribute name="VALUE" x="60.706" y="19.431" size="0.4064" layer="27" font="vector"/>
 </element>
@@ -2573,23 +2576,23 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <attribute name="NAME" x="24.13" y="8.255" size="0.8128" layer="25" ratio="12"/>
 <attribute name="VALUE" x="20.066" y="3.683" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="C37" library="freetronics" package="0603" value="22pF 0603" x="27.178" y="4.318" smashed="yes">
+<element name="C37" library="freetronics-master-v1.1" package="0603" value="22pF 0603" x="27.178" y="4.318" smashed="yes">
 <attribute name="NAME" x="26.289" y="5.08" size="0.8128" layer="25" font="vector" ratio="12"/>
 <attribute name="VALUE" x="26.162" y="3.175" size="0.4064" layer="27" font="vector"/>
 </element>
-<element name="C38" library="freetronics" package="0603" value="22pF 0603" x="23.114" y="4.318" smashed="yes" rot="R180">
+<element name="C38" library="freetronics-master-v1.1" package="0603" value="22pF 0603" x="23.114" y="4.318" smashed="yes" rot="R180">
 <attribute name="NAME" x="21.971" y="5.08" size="0.8128" layer="25" font="vector" ratio="12"/>
 <attribute name="VALUE" x="24.13" y="5.461" size="0.4064" layer="27" font="vector" rot="R180"/>
 </element>
-<element name="C39" library="freetronics" package="0603" value="100nF 0603" x="25.654" y="22.352" smashed="yes" rot="R270">
+<element name="C39" library="freetronics-master-v1.1" package="0603" value="100nF 0603" x="25.654" y="22.352" smashed="yes" rot="R270">
 <attribute name="NAME" x="25.019" y="23.368" size="0.8128" layer="25" font="vector" ratio="12"/>
 <attribute name="VALUE" x="24.511" y="23.368" size="0.4064" layer="27" font="vector" rot="R270"/>
 </element>
-<element name="R14" library="freetronics" package="0603" value="22R 0603" x="9.652" y="16.256" smashed="yes" rot="R180">
+<element name="R14" library="freetronics-master-v1.1" package="0603" value="22R 0603" x="9.652" y="16.256" smashed="yes" rot="R180">
 <attribute name="NAME" x="6.477" y="16.002" size="0.8128" layer="25" font="vector" ratio="12"/>
 <attribute name="VALUE" x="10.668" y="17.399" size="0.4064" layer="27" font="vector" rot="R180"/>
 </element>
-<element name="R15" library="freetronics" package="0603" value="22R 0603" x="9.652" y="14.224" smashed="yes" rot="R180">
+<element name="R15" library="freetronics-master-v1.1" package="0603" value="22R 0603" x="9.652" y="14.224" smashed="yes" rot="R180">
 <attribute name="NAME" x="6.477" y="13.97" size="0.8128" layer="25" font="vector" ratio="12"/>
 <attribute name="VALUE" x="10.668" y="15.367" size="0.4064" layer="27" font="vector" rot="R180"/>
 </element>
@@ -2601,19 +2604,19 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <attribute name="VALUE" x="30.512" y="12.714" size="1.27" layer="27" rot="R90"/>
 <attribute name="NAME" x="25.41" y="17.22" size="0.8128" layer="25" ratio="12"/>
 </element>
-<element name="R16" library="freetronics" package="0603" value="1M 0603" x="26.924" y="11.43" smashed="yes">
+<element name="R16" library="freetronics-master-v1.1" package="0603" value="1M 0603" x="26.924" y="11.43" smashed="yes">
 <attribute name="NAME" x="26.035" y="12.192" size="0.8128" layer="25" font="vector" ratio="12"/>
 <attribute name="VALUE" x="25.908" y="10.287" size="0.4064" layer="27" font="vector"/>
 </element>
-<element name="R48" library="freetronics" package="0603" value="27R 0603" x="23.368" y="11.43" smashed="yes">
+<element name="R48" library="freetronics-master-v1.1" package="0603" value="27R 0603" x="23.368" y="11.43" smashed="yes">
 <attribute name="NAME" x="22.479" y="12.192" size="0.8128" layer="25" font="vector" ratio="12"/>
 <attribute name="VALUE" x="22.352" y="10.287" size="0.4064" layer="27" font="vector"/>
 </element>
-<element name="Z1" library="freetronics" package="0603" value="PGB1010603" x="9.652" y="12.446" smashed="yes">
+<element name="Z1" library="freetronics-master-v1.1" package="0603" value="PGB1010603" x="9.652" y="12.446" smashed="yes">
 <attribute name="NAME" x="7.239" y="12.192" size="0.8128" layer="25" font="vector" ratio="12"/>
 <attribute name="VALUE" x="8.636" y="11.303" size="0.4064" layer="27" font="vector"/>
 </element>
-<element name="Z2" library="freetronics" package="0603" value="PGB1010603" x="9.652" y="18.034" smashed="yes">
+<element name="Z2" library="freetronics-master-v1.1" package="0603" value="PGB1010603" x="9.652" y="18.034" smashed="yes">
 <attribute name="NAME" x="7.239" y="17.78" size="0.8128" layer="25" font="vector" ratio="12"/>
 <attribute name="VALUE" x="8.636" y="16.891" size="0.4064" layer="27" font="vector"/>
 </element>
@@ -2621,7 +2624,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <attribute name="NAME" x="11.176" y="8.9535" size="0.8128" layer="25" ratio="12"/>
 <attribute name="VALUE" x="10.541" y="10.16" size="0.4064" layer="27" rot="R270"/>
 </element>
-<element name="C40" library="freetronics" package="0603" value="1uF 0603" x="21.082" y="22.352" smashed="yes" rot="R90">
+<element name="C40" library="freetronics-master-v1.1" package="0603" value="1uF 0603" x="21.082" y="22.352" smashed="yes" rot="R90">
 <attribute name="NAME" x="19.685" y="23.368" size="0.8128" layer="25" font="vector" ratio="12"/>
 <attribute name="VALUE" x="22.225" y="21.336" size="0.4064" layer="27" font="vector" rot="R90"/>
 </element>
@@ -2637,7 +2640,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <attribute name="NAME" x="30.607" y="34.163" size="0.8128" layer="25" ratio="12"/>
 <attribute name="VALUE" x="27.813" y="36.449" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C41" library="freetronics" package="0603" value="100nF 0603" x="35.56" y="28.448" smashed="yes" rot="R270">
+<element name="C41" library="freetronics-master-v1.1" package="0603" value="100nF 0603" x="35.56" y="28.448" smashed="yes" rot="R270">
 <attribute name="NAME" x="34.671" y="29.464" size="0.8128" layer="25" font="vector" ratio="12"/>
 <attribute name="VALUE" x="34.417" y="29.464" size="0.4064" layer="27" font="vector" rot="R270"/>
 </element>
@@ -2653,7 +2656,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <attribute name="NAME" x="91.821" y="32.258" size="0.8128" layer="25" ratio="12"/>
 <attribute name="VALUE" x="91.44" y="28.575" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="C42" library="freetronics" package="0603" value="100nF 0603" x="85.344" y="23.368" smashed="yes" rot="R270">
+<element name="C42" library="freetronics-master-v1.1" package="0603" value="100nF 0603" x="85.344" y="23.368" smashed="yes" rot="R270">
 <attribute name="NAME" x="84.963" y="24.384" size="0.8128" layer="25" font="vector" ratio="12"/>
 <attribute name="VALUE" x="84.201" y="24.384" size="0.4064" layer="27" font="vector" rot="R270"/>
 </element>
@@ -2690,19 +2693,19 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <attribute name="NAME" x="95.532" y="57.134" size="1.016" layer="25" ratio="12"/>
 <attribute name="VALUE" x="94.291" y="59.408" size="1.016" layer="27" rot="R270"/>
 </element>
-<element name="R4" library="freetronics" package="0603@1" value="10K 0603" x="23.622" y="22.352" smashed="yes" rot="R90">
+<element name="R4" library="freetronics-master-v1.1" package="0603" value="10K 0603" x="23.622" y="22.352" smashed="yes" rot="R90">
 <attribute name="NAME" x="22.733" y="23.368" size="0.8128" layer="25" font="vector" ratio="12"/>
 <attribute name="VALUE" x="24.765" y="21.336" size="0.4064" layer="27" font="vector" rot="R90"/>
 </element>
-<element name="R5" library="freetronics" package="0603@1" value="10K 0603" x="75.946" y="13.97" smashed="yes" rot="R90">
+<element name="R5" library="freetronics-master-v1.1" package="0603" value="10K 0603" x="75.946" y="13.97" smashed="yes" rot="R90">
 <attribute name="NAME" x="75.311" y="14.986" size="0.8128" layer="25" font="vector" ratio="12"/>
 <attribute name="VALUE" x="77.089" y="12.954" size="0.4064" layer="27" font="vector" rot="R90"/>
 </element>
-<element name="R6" library="freetronics" package="0603@1" value="10K 0603" x="28.448" y="42.164" smashed="yes" rot="R180">
+<element name="R6" library="freetronics-master-v1.1" package="0603" value="10K 0603" x="28.448" y="42.164" smashed="yes" rot="R180">
 <attribute name="NAME" x="28.067" y="42.926" size="0.8128" layer="25" font="vector" ratio="12"/>
 <attribute name="VALUE" x="29.464" y="43.307" size="0.4064" layer="27" font="vector" rot="R180"/>
 </element>
-<element name="R11" library="freetronics" package="0603@1" value="10K 0603" x="32.512" y="42.164" smashed="yes" rot="R180">
+<element name="R11" library="freetronics-master-v1.1" package="0603" value="10K 0603" x="32.512" y="42.164" smashed="yes" rot="R180">
 <attribute name="NAME" x="31.877" y="42.926" size="0.8128" layer="25" font="vector" ratio="12"/>
 <attribute name="VALUE" x="33.528" y="43.307" size="0.4064" layer="27" font="vector" rot="R180"/>
 </element>
@@ -2718,11 +2721,11 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <attribute name="NAME" x="4.2418" y="37.3888" size="0.8128" layer="25" ratio="12"/>
 <attribute name="VALUE" x="3.175" y="37.846" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R19" library="freetronics" package="0603@1" value="4K7 0603" x="48.514" y="8.382" smashed="yes" rot="R270">
+<element name="R19" library="freetronics-master-v1.1" package="0603" value="4K7 0603" x="48.514" y="8.382" smashed="yes" rot="R270">
 <attribute name="NAME" x="47.371" y="9.398" size="0.8128" layer="25" font="vector" ratio="12"/>
 <attribute name="VALUE" x="47.371" y="9.398" size="0.4064" layer="27" font="vector" rot="R270"/>
 </element>
-<element name="R49" library="freetronics" package="0603@1" value="4K7 0603" x="51.054" y="8.382" smashed="yes" rot="R270">
+<element name="R49" library="freetronics-master-v1.1" package="0603" value="4K7 0603" x="51.054" y="8.382" smashed="yes" rot="R270">
 <attribute name="NAME" x="50.673" y="9.398" size="0.8128" layer="25" font="vector" ratio="12"/>
 <attribute name="VALUE" x="49.911" y="9.398" size="0.4064" layer="27" font="vector" rot="R270"/>
 </element>
@@ -2730,7 +2733,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <attribute name="NAME" x="3.7338" y="25.7048" size="0.8128" layer="25" ratio="12"/>
 <attribute name="VALUE" x="3.175" y="26.67" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C9" library="freetronics" package="0603@1" value="100nF 0603" x="62.484" y="5.334" smashed="yes" rot="R180">
+<element name="C9" library="freetronics-master-v1.1" package="0603" value="100nF 0603" x="62.484" y="5.334" smashed="yes" rot="R180">
 <attribute name="NAME" x="61.595" y="6.096" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="63.5" y="6.477" size="0.4064" layer="27" font="vector" rot="R180"/>
 </element>
@@ -3062,7 +3065,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <wire x1="12.446" y1="47.374" x2="12.446" y2="50.432" width="0.8128" layer="1"/>
 <wire x1="12.446" y1="50.432" x2="13.97" y2="51.956" width="0.8128" layer="1"/>
 <wire x1="12.192" y1="54.864" x2="13.97" y2="54.864" width="0.3048" layer="1"/>
-<wire x1="27.598" y1="42.164" x2="27.598" y2="44.03" width="0.3048" layer="1"/>
+<wire x1="27.686" y1="42.164" x2="27.598" y2="44.03" width="0.3048" layer="1"/>
 <wire x1="27.598" y1="44.03" x2="26.162" y2="45.466" width="0.3048" layer="1"/>
 <wire x1="26.162" y1="45.466" x2="18.415" y2="45.466" width="0.3048" layer="1"/>
 <wire x1="69.469" y1="53.975" x2="70.612" y2="55.118" width="0.4064" layer="1"/>
@@ -3900,7 +3903,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <wire x1="82.55" y1="24.268" x2="82.5754" y2="24.2934" width="0.4064" layer="1"/>
 <wire x1="82.5754" y1="24.2934" x2="82.5754" y2="27.3304" width="0.4064" layer="1"/>
 <wire x1="82.55" y1="24.268" x2="82.6" y2="24.218" width="0.4064" layer="1"/>
-<wire x1="82.6" y1="24.218" x2="85.344" y2="24.218" width="0.4064" layer="1"/>
+<wire x1="82.6" y1="24.218" x2="85.344" y2="24.13" width="0.4064" layer="1"/>
 <wire x1="106.15" y1="24.69" x2="105.948" y2="24.638" width="0.254" layer="1"/>
 <wire x1="105.948" y1="24.638" x2="101.854" y2="24.638" width="0.3048" layer="1"/>
 <via x="101.854" y="24.638" extent="1-16" drill="0.5"/>
@@ -3908,7 +3911,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <wire x1="93.726" y1="24.638" x2="92.964" y2="24.13" width="0.3048" layer="16"/>
 <via x="92.964" y="24.13" extent="1-16" drill="0.5"/>
 <wire x1="92.964" y1="24.13" x2="85.432" y2="24.13" width="0.3048" layer="1"/>
-<wire x1="85.432" y1="24.13" x2="85.344" y2="24.218" width="0.254" layer="1"/>
+<wire x1="85.432" y1="24.13" x2="85.344" y2="24.13" width="0.254" layer="1"/>
 <wire x1="32.385" y1="37.144" x2="32.385" y2="38.989" width="0.3048" layer="1"/>
 <wire x1="32.385" y1="38.989" x2="33.02" y2="39.624" width="0.3048" layer="1"/>
 <wire x1="33.02" y1="39.624" x2="39.37" y2="39.624" width="0.3048" layer="1"/>
@@ -3991,7 +3994,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <wire x1="51.562" y1="14.986" x2="58.928" y2="14.986" width="0.254" layer="16"/>
 <wire x1="58.928" y1="14.986" x2="61.214" y2="12.7" width="0.254" layer="16"/>
 <wire x1="61.214" y1="12.7" x2="72.898" y2="12.7" width="0.254" layer="16"/>
-<wire x1="51.054" y1="9.232" x2="51.054" y2="11.43" width="0.3048" layer="1"/>
+<wire x1="51.054" y1="9.144" x2="51.054" y2="11.43" width="0.3048" layer="1"/>
 <via x="51.054" y="11.43" extent="1-16" drill="0.5"/>
 <wire x1="51.054" y1="11.43" x2="51.054" y2="14.478" width="0.3048" layer="16"/>
 <via x="72.898" y="12.7" extent="1-16" drill="0.5"/>
@@ -4021,15 +4024,15 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <wire x1="94.234" y1="23.622" x2="83.732" y2="13.12" width="0.3048" layer="1"/>
 <wire x1="69.8246" y1="14.37" x2="73.768" y2="14.37" width="0.3048" layer="1"/>
 <wire x1="73.768" y1="14.37" x2="75.018" y2="13.12" width="0.3048" layer="1"/>
-<wire x1="75.018" y1="13.12" x2="75.946" y2="13.12" width="0.3048" layer="1"/>
-<wire x1="75.946" y1="13.12" x2="78.486" y2="13.12" width="0.3048" layer="1"/>
-<wire x1="78.486" y1="13.12" x2="83.732" y2="13.12" width="0.3048" layer="1"/>
+<wire x1="75.018" y1="13.12" x2="75.946" y2="13.208" width="0.3048" layer="1"/>
+<wire x1="75.946" y1="13.208" x2="78.486" y2="13.208" width="0.3048" layer="1"/>
+<wire x1="78.486" y1="13.208" x2="83.732" y2="13.12" width="0.3048" layer="1"/>
 </signal>
 <signal name="AREF">
 <contactref element="IC1" pad="20"/>
 <contactref element="C9" pad="1"/>
 <wire x1="65.132" y1="9.6774" x2="65.132" y2="7.132" width="0.3048" layer="1"/>
-<wire x1="65.132" y1="7.132" x2="63.334" y2="5.334" width="0.3048" layer="1"/>
+<wire x1="65.132" y1="7.132" x2="63.246" y2="5.334" width="0.3048" layer="1"/>
 </signal>
 <signal name="D10_SS">
 <contactref element="IC1" pad="14"/>
@@ -4259,11 +4262,11 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <contactref element="R13" pad="2"/>
 <contactref element="IC1" pad="7"/>
 <wire x1="63.532" y1="18.2626" x2="63.532" y2="19.614" width="0.3048" layer="1"/>
-<wire x1="63.532" y1="19.614" x2="62.572" y2="20.574" width="0.3048" layer="1"/>
-<wire x1="62.572" y1="20.574" x2="62.572" y2="22.567" width="0.3048" layer="1"/>
+<wire x1="63.532" y1="19.614" x2="62.484" y2="20.574" width="0.3048" layer="1"/>
+<wire x1="62.484" y1="20.574" x2="62.572" y2="22.567" width="0.3048" layer="1"/>
 <wire x1="62.572" y1="22.567" x2="63.881" y2="23.876" width="0.3048" layer="1"/>
 <wire x1="63.881" y1="23.876" x2="63.881" y2="26.709" width="0.3048" layer="1"/>
-<wire x1="63.881" y1="26.709" x2="64.35" y2="27.178" width="0.3048" layer="1"/>
+<wire x1="63.881" y1="26.709" x2="64.262" y2="27.178" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$28">
 <contactref element="C11" pad="2"/>
@@ -4271,11 +4274,11 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <contactref element="R13" pad="1"/>
 <contactref element="IC1" pad="8"/>
 <wire x1="62.732" y1="18.2626" x2="62.732" y2="18.714" width="0.254" layer="1"/>
-<wire x1="62.732" y1="18.714" x2="60.872" y2="20.574" width="0.3048" layer="1"/>
-<wire x1="60.872" y1="20.574" x2="60.872" y2="22.059" width="0.3048" layer="1"/>
+<wire x1="62.732" y1="18.714" x2="60.96" y2="20.574" width="0.3048" layer="1"/>
+<wire x1="60.96" y1="20.574" x2="60.872" y2="22.059" width="0.3048" layer="1"/>
 <wire x1="60.872" y1="22.059" x2="59.055" y2="23.876" width="0.3048" layer="1"/>
 <wire x1="59.055" y1="23.876" x2="59.055" y2="26.709" width="0.3048" layer="1"/>
-<wire x1="59.055" y1="26.709" x2="58.586" y2="27.178" width="0.3048" layer="1"/>
+<wire x1="59.055" y1="26.709" x2="58.674" y2="27.178" width="0.3048" layer="1"/>
 </signal>
 <signal name="DTR">
 <contactref element="SJ3" pad="1"/>
@@ -4397,7 +4400,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <contactref element="R4" pad="1"/>
 <wire x1="24.412" y1="19.064" x2="24.412" y2="20.32" width="0.254" layer="1"/>
 <wire x1="24.412" y1="20.32" x2="24.412" y2="20.712" width="0.254" layer="1"/>
-<wire x1="24.412" y1="20.712" x2="23.622" y2="21.502" width="0.254" layer="1"/>
+<wire x1="24.412" y1="20.712" x2="23.622" y2="21.59" width="0.254" layer="1"/>
 <wire x1="24.412" y1="20.32" x2="32.004" y2="20.32" width="0.254" layer="1"/>
 <wire x1="32.004" y1="20.32" x2="42.164" y2="30.48" width="0.254" layer="1"/>
 <wire x1="42.164" y1="30.48" x2="46.228" y2="30.48" width="0.254" layer="1"/>
@@ -4423,38 +4426,38 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <contactref element="XTL1" pad="2"/>
 <contactref element="R16" pad="2"/>
 <contactref element="IC7" pad="2"/>
-<wire x1="28.028" y1="4.318" x2="27.559" y2="4.787" width="0.254" layer="1"/>
+<wire x1="27.94" y1="4.318" x2="27.559" y2="4.787" width="0.254" layer="1"/>
 <wire x1="27.559" y1="4.787" x2="27.559" y2="7.874" width="0.254" layer="1"/>
 <wire x1="27.559" y1="7.874" x2="27.559" y2="11.215" width="0.254" layer="1"/>
-<wire x1="27.559" y1="11.215" x2="27.774" y2="11.43" width="0.254" layer="1" curve="-90"/>
+<wire x1="27.559" y1="11.215" x2="27.686" y2="11.43" width="0.254" layer="1" curve="-90"/>
 <wire x1="24.912" y1="14.464" x2="24.912" y2="12.934" width="0.254" layer="1"/>
 <wire x1="24.912" y1="12.934" x2="25.4" y2="12.446" width="0.254" layer="1"/>
 <wire x1="25.4" y1="12.446" x2="27.432" y2="12.446" width="0.254" layer="1"/>
 <wire x1="27.432" y1="12.446" x2="27.686" y2="12.192" width="0.254" layer="1"/>
 <wire x1="27.686" y1="12.192" x2="27.686" y2="11.518" width="0.254" layer="1"/>
-<wire x1="27.686" y1="11.518" x2="27.774" y2="11.43" width="0.254" layer="1"/>
+<wire x1="27.686" y1="11.518" x2="27.686" y2="11.43" width="0.254" layer="1"/>
 </signal>
 <signal name="N$114">
 <contactref element="XTL1" pad="1"/>
 <contactref element="C38" pad="2"/>
 <contactref element="R48" pad="2"/>
 <contactref element="R16" pad="1"/>
-<wire x1="22.264" y1="4.318" x2="22.733" y2="4.787" width="0.254" layer="1"/>
+<wire x1="22.352" y1="4.318" x2="22.733" y2="4.787" width="0.254" layer="1"/>
 <wire x1="22.733" y1="4.787" x2="22.733" y2="7.874" width="0.254" layer="1"/>
 <wire x1="22.733" y1="7.874" x2="24.218" y2="9.359" width="0.254" layer="1"/>
-<wire x1="24.218" y1="9.359" x2="24.218" y2="11.43" width="0.254" layer="1"/>
-<wire x1="26.074" y1="11.43" x2="24.218" y2="11.43" width="0.254" layer="1"/>
+<wire x1="24.218" y1="9.359" x2="24.13" y2="11.43" width="0.254" layer="1"/>
+<wire x1="26.162" y1="11.43" x2="24.13" y2="11.43" width="0.254" layer="1"/>
 </signal>
 <signal name="RD-">
 <contactref element="R14" pad="1"/>
 <contactref element="IC7" pad="30"/>
 <wire x1="23.862" y1="16.014" x2="10.744" y2="16.014" width="0.254" layer="1"/>
-<wire x1="10.744" y1="16.014" x2="10.502" y2="16.256" width="0.254" layer="1"/>
+<wire x1="10.744" y1="16.014" x2="10.414" y2="16.256" width="0.254" layer="1"/>
 </signal>
 <signal name="RD+">
 <contactref element="R15" pad="1"/>
 <contactref element="IC7" pad="29"/>
-<wire x1="10.502" y1="14.224" x2="10.668" y2="14.224" width="0.254" layer="1"/>
+<wire x1="10.414" y1="14.224" x2="10.668" y2="14.224" width="0.254" layer="1"/>
 <wire x1="10.668" y1="14.224" x2="11.43" y2="14.986" width="0.254" layer="1"/>
 <wire x1="11.43" y1="14.986" x2="18.288" y2="14.986" width="0.254" layer="1"/>
 <via x="18.288" y="14.986" extent="1-16" drill="0.5"/>
@@ -4471,7 +4474,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <wire x1="23.876" y1="12.446" x2="22.86" y2="12.446" width="0.254" layer="1"/>
 <wire x1="22.86" y1="12.446" x2="22.606" y2="12.192" width="0.254" layer="1"/>
 <wire x1="22.606" y1="12.192" x2="22.606" y2="11.518" width="0.254" layer="1"/>
-<wire x1="22.606" y1="11.518" x2="22.518" y2="11.43" width="0.254" layer="1"/>
+<wire x1="22.606" y1="11.518" x2="22.606" y2="11.43" width="0.254" layer="1"/>
 </signal>
 <signal name="N$37">
 <contactref element="Z1" pad="2"/>
@@ -4497,11 +4500,11 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <via x="2.794" y="13.97" extent="1-16" drill="0.5"/>
 <via x="2.794" y="16.51" extent="1-16" drill="0.5"/>
 <wire x1="2.794" y1="16.51" x2="2.794" y2="13.97" width="0.8128" layer="16"/>
-<wire x1="10.502" y1="18.034" x2="11.938" y2="18.034" width="0.3048" layer="1"/>
+<wire x1="10.414" y1="18.034" x2="11.938" y2="18.034" width="0.3048" layer="1"/>
 <via x="11.938" y="18.034" extent="1-16" drill="0.5"/>
 <wire x1="11.938" y1="18.034" x2="11.569" y2="17.665" width="0.3048" layer="16"/>
 <wire x1="11.569" y1="17.665" x2="5.444" y2="17.665" width="0.3048" layer="16"/>
-<wire x1="10.502" y1="12.446" x2="11.938" y2="12.446" width="0.3048" layer="1"/>
+<wire x1="10.414" y1="12.446" x2="11.938" y2="12.446" width="0.3048" layer="1"/>
 <via x="11.938" y="12.446" extent="1-16" drill="0.5"/>
 <wire x1="11.938" y1="12.446" x2="11.569" y2="12.815" width="0.3048" layer="16"/>
 <wire x1="11.569" y1="12.815" x2="5.444" y2="12.815" width="0.3048" layer="16"/>
@@ -4512,16 +4515,16 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <contactref element="R15" pad="2"/>
 <contactref element="P4" pad="D+"/>
 <wire x1="5.369" y1="15.24" x2="7.786" y2="15.24" width="0.3048" layer="1"/>
-<wire x1="7.786" y1="15.24" x2="8.802" y2="14.224" width="0.3048" layer="1"/>
-<wire x1="8.802" y1="14.224" x2="8.802" y2="12.446" width="0.3048" layer="1"/>
+<wire x1="7.786" y1="15.24" x2="8.89" y2="14.224" width="0.3048" layer="1"/>
+<wire x1="8.89" y1="14.224" x2="8.89" y2="12.446" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$40">
 <contactref element="Z2" pad="1"/>
 <contactref element="R14" pad="2"/>
 <contactref element="P4" pad="D-"/>
 <wire x1="5.369" y1="15.89" x2="8.436" y2="15.89" width="0.3048" layer="1"/>
-<wire x1="8.436" y1="15.89" x2="8.802" y2="16.256" width="0.3048" layer="1"/>
-<wire x1="8.802" y1="16.256" x2="8.802" y2="18.034" width="0.3048" layer="1"/>
+<wire x1="8.436" y1="15.89" x2="8.89" y2="16.256" width="0.3048" layer="1"/>
+<wire x1="8.89" y1="16.256" x2="8.89" y2="18.034" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$115">
 <contactref element="F1" pad="1"/>
@@ -4541,17 +4544,17 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <contactref element="C40" pad="1"/>
 <wire x1="23.862" y1="17.514" x2="23.126" y2="17.514" width="0.254" layer="1"/>
 <wire x1="23.126" y1="17.514" x2="21.082" y2="19.558" width="0.254" layer="1"/>
-<wire x1="21.082" y1="19.558" x2="21.082" y2="21.502" width="0.254" layer="1"/>
+<wire x1="21.082" y1="19.558" x2="21.082" y2="21.59" width="0.254" layer="1"/>
 </signal>
 <signal name="N$62">
 <contactref element="IC8" pad="3"/>
 <contactref element="R6" pad="1"/>
 <contactref element="R11" pad="2"/>
-<wire x1="31.662" y1="42.164" x2="29.298" y2="42.164" width="0.3048" layer="1"/>
+<wire x1="31.75" y1="42.164" x2="29.21" y2="42.164" width="0.3048" layer="1"/>
 <wire x1="31.115" y1="37.144" x2="31.115" y2="39.243" width="0.3048" layer="1"/>
 <wire x1="31.115" y1="39.243" x2="29.464" y2="40.894" width="0.3048" layer="1"/>
 <wire x1="29.464" y1="40.894" x2="29.464" y2="41.998" width="0.3048" layer="1"/>
-<wire x1="29.464" y1="41.998" x2="29.298" y2="42.164" width="0.3048" layer="1"/>
+<wire x1="29.464" y1="41.998" x2="29.21" y2="42.164" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$63">
 <contactref element="IC8" pad="6"/>
@@ -4658,7 +4661,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <wire x1="49.022" y1="15.748" x2="58.928" y2="15.748" width="0.254" layer="16"/>
 <wire x1="58.928" y1="15.748" x2="61.468" y2="13.208" width="0.254" layer="16"/>
 <wire x1="61.468" y1="13.208" x2="69.596" y2="13.208" width="0.254" layer="16"/>
-<wire x1="48.514" y1="9.232" x2="48.514" y2="11.43" width="0.3048" layer="1"/>
+<wire x1="48.514" y1="9.144" x2="48.514" y2="11.43" width="0.3048" layer="1"/>
 <via x="48.514" y="11.43" extent="1-16" drill="0.5"/>
 <wire x1="69.596" y1="13.208" x2="70.358" y2="13.97" width="0.254" layer="16"/>
 <wire x1="70.358" y1="13.97" x2="73.406" y2="13.97" width="0.254" layer="16"/>
@@ -4682,7 +4685,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <wire x1="73.406" y1="15.494" x2="80.518" y2="15.494" width="0.254" layer="16"/>
 <via x="80.518" y="15.494" extent="1-16" drill="0.5"/>
 <wire x1="80.518" y1="15.494" x2="79.16" y2="15.494" width="0.3048" layer="1"/>
-<wire x1="79.16" y1="15.494" x2="78.486" y2="14.82" width="0.3048" layer="1"/>
+<wire x1="79.16" y1="15.494" x2="78.486" y2="14.732" width="0.3048" layer="1"/>
 </signal>
 <signal name="USBGND">
 <contactref element="IC7" pad="28"/>
@@ -4875,10 +4878,10 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <wire x1="23.396" y1="15.014" x2="23.862" y2="15.014" width="0.254" layer="1"/>
 <wire x1="25.654" y1="25.146" x2="23.114" y2="22.606" width="0.4064" layer="16"/>
 <wire x1="23.114" y1="22.606" x2="23.114" y2="13.97" width="0.4064" layer="16"/>
-<wire x1="25.654" y1="25.146" x2="25.654" y2="23.202" width="0.4064" layer="1"/>
+<wire x1="25.654" y1="25.146" x2="25.654" y2="23.114" width="0.4064" layer="1"/>
 <wire x1="25.654" y1="27.06" x2="29.224" y2="27.06" width="0.6096" layer="1"/>
 <wire x1="29.224" y1="27.06" x2="29.276" y2="27.008" width="0.6096" layer="1"/>
-<wire x1="23.622" y1="23.202" x2="25.654" y2="23.202" width="0.254" layer="1"/>
+<wire x1="23.622" y1="23.114" x2="25.654" y2="23.114" width="0.254" layer="1"/>
 <wire x1="6.35" y1="49.53" x2="18.796" y2="49.53" width="0.6096" layer="16"/>
 <wire x1="18.796" y1="49.53" x2="20.32" y2="51.054" width="0.6096" layer="16"/>
 <wire x1="20.32" y1="51.054" x2="20.32" y2="59.0572" width="0.6096" layer="16"/>
@@ -4887,14 +4890,14 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <wire x1="33.655" y1="29.21" x2="33.655" y2="25.019" width="0.3048" layer="1"/>
 <wire x1="33.655" y1="25.019" x2="31.75" y2="23.114" width="0.3048" layer="1"/>
 <wire x1="31.75" y1="23.114" x2="25.742" y2="23.114" width="0.3048" layer="1"/>
-<wire x1="25.742" y1="23.114" x2="25.654" y2="23.202" width="0.3048" layer="1"/>
-<wire x1="35.56" y1="29.298" x2="33.743" y2="29.298" width="0.3048" layer="1"/>
+<wire x1="25.742" y1="23.114" x2="25.654" y2="23.114" width="0.3048" layer="1"/>
+<wire x1="35.56" y1="29.21" x2="33.743" y2="29.298" width="0.3048" layer="1"/>
 <wire x1="33.743" y1="29.298" x2="33.655" y2="29.21" width="0.3048" layer="1"/>
-<wire x1="48.514" y1="7.532" x2="51.054" y2="7.532" width="0.254" layer="1"/>
-<wire x1="51.054" y1="7.532" x2="54.61" y2="7.532" width="0.254" layer="1"/>
+<wire x1="48.514" y1="7.62" x2="51.054" y2="7.62" width="0.254" layer="1"/>
+<wire x1="51.054" y1="7.62" x2="54.61" y2="7.62" width="0.254" layer="1"/>
 <wire x1="63.532" y1="9.6774" x2="63.532" y2="8.16" width="0.4064" layer="1"/>
 <wire x1="63.532" y1="8.16" x2="62.904" y2="7.532" width="0.4064" layer="1"/>
-<wire x1="62.904" y1="7.532" x2="54.61" y2="7.532" width="0.4064" layer="1"/>
+<wire x1="62.904" y1="7.532" x2="54.61" y2="7.62" width="0.4064" layer="1"/>
 <wire x1="65.932" y1="18.2626" x2="65.932" y2="20.066" width="0.4064" layer="1"/>
 <wire x1="65.932" y1="20.066" x2="65.932" y2="20.212" width="0.4064" layer="1"/>
 <wire x1="65.932" y1="20.212" x2="68.072" y2="22.352" width="0.4064" layer="1"/>
@@ -4936,7 +4939,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <wire x1="79.502" y1="56.642" x2="77.851" y2="55.245" width="0.3048" layer="1"/>
 <wire x1="100.33" y1="43.688" x2="98.298" y2="41.656" width="0.4064" layer="1"/>
 <wire x1="98.298" y1="41.656" x2="95.504" y2="41.656" width="0.4064" layer="1"/>
-<wire x1="75.946" y1="14.82" x2="77.216" y2="16.09" width="0.3048" layer="1"/>
+<wire x1="75.946" y1="14.732" x2="77.216" y2="16.09" width="0.3048" layer="1"/>
 <wire x1="77.216" y1="16.09" x2="77.216" y2="22.606" width="0.3048" layer="1"/>
 <wire x1="77.216" y1="22.606" x2="75.946" y2="23.876" width="0.3048" layer="1"/>
 <wire x1="26.6446" y1="66.294" x2="26.6446" y2="62.2554" width="0.3048" layer="16"/>
@@ -4968,33 +4971,33 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <approved hash="5,1,6f571b7ecbcc4f1f"/>
 <approved hash="5,1,6ab51b72cbc44af9"/>
 <approved hash="5,1,14c39920bd3481eb"/>
-<approved hash="5,1,74711b7acbcc543d"/>
-<approved hash="5,1,76801b7acbcc56cc"/>
 <approved hash="5,1,71e61b7ecbcc51ae"/>
+<approved hash="5,1,76801b7acbcc56cc"/>
+<approved hash="5,1,74711b7acbcc543d"/>
 <approved hash="5,1,79131b7ecbd45943"/>
 <approved hash="5,1,3c28a25acb22e494"/>
 <approved hash="5,1,1ec4aab4c334867b"/>
 <approved hash="5,1,004aa254cbcc9001"/>
-<approved hash="19,1,979dd073d63d91d3"/>
 <approved hash="19,1,9975de9bd491937f"/>
+<approved hash="19,1,979dd073d63d91d3"/>
 <approved hash="19,1,5f9afe74f83b59d5"/>
 <approved hash="19,1,5172f09cfa975b79"/>
+<approved hash="5,1,b3481154cfcc9403"/>
 <approved hash="5,1,a4ee887d92a059f9"/>
 <approved hash="5,1,adc619b4c7348279"/>
-<approved hash="5,1,b3481154cfcc9403"/>
 <approved hash="5,1,03fe3fa7c27a19e9"/>
-<approved hash="5,1,3cc188b4c734827e"/>
 <approved hash="5,1,224f8054cfcc9404"/>
+<approved hash="5,1,3cc188b4c734827e"/>
 <approved hash="5,1,6f4d92a95818a1fa"/>
-<approved hash="5,1,d54d7754b3cce806"/>
 <approved hash="5,1,cbc37fb4bb34fe7c"/>
+<approved hash="5,1,d54d7754b3cce806"/>
 <approved hash="5,1,44b0e654d3cc88fb"/>
 <approved hash="5,1,5a3eeeb4db349e81"/>
 <approved hash="5,1,f7b65554cfcc94fd"/>
 <approved hash="5,1,e9385db4c7348287"/>
-<approved hash="5,1,66b5c454cfcc94fe"/>
 <approved hash="5,1,64bfb42cae3b9be2"/>
 <approved hash="5,1,783bccb4c7348284"/>
+<approved hash="5,1,66b5c454cfcc94fe"/>
 <approved hash="5,1,122b92269d2296eb"/>
 <approved hash="5,1,24dcb7a8cf28d760"/>
 <approved hash="5,1,dc4f9171f7c44a03"/>
